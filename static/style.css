@@ -1,0 +1,88 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f4f7fc; /* Light gray-blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container (Form Box) */
+.container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    max-width: 420px;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect for a modern feel */
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+input[type="text"], input[type="file"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+input[type="text"]:focus, input[type="file"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #357abd, #2b6bbf);
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
